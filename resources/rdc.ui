@@ -96,6 +96,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -141,6 +144,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
+    </property>
     <property name="placeholderText">
      <string>Width</string>
     </property>
@@ -153,6 +159,9 @@
       <width>81</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
     </property>
     <property name="placeholderText">
      <string>Height</string>

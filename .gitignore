@@ -1,2 +1,3 @@
-servers.cfg
-pyRDC.sublime-workspace
+*.cfg
+*.sublime-workspace
+*.pyc

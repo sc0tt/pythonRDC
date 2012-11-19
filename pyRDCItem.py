@@ -1,7 +1,7 @@
 import sys
 
-class pyRDCItem:
-    def __init__(self, title, ip, port, width, height, fs = True):
+class pyRDCItem():
+    def __init__(self, title, ip, port, width, height, fs = True, parent=None):
         self.title = title
         self.ip = ip
         self.port = port

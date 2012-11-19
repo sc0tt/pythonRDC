@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>426</width>
-    <height>221</height>
+    <height>213</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -20,16 +20,6 @@
    <string>Remote Desktop Controller</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="lvServers">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>231</width>
-      <height>131</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pbRemove">
     <property name="geometry">
      <rect>
@@ -75,7 +65,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Add Server</string>
+     <string>Save Server</string>
     </property>
     <property name="checkable">
      <bool>false</bool>
@@ -181,6 +171,29 @@
      <string>Display Name</string>
     </property>
    </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Servers</string>
+    </property>
+    <widget class="QComboBox" name="cbServers">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -188,7 +201,7 @@
      <x>0</x>
      <y>0</y>
      <width>426</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSave">
@@ -199,21 +212,14 @@
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
    <addaction name="menuSave"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="statusTip">
-    <string/>
-   </property>
-   <property name="sizeGripEnabled">
-    <bool>false</bool>
-   </property>
+   <addaction name="menuAbout"/>
   </widget>
   <action name="actionSave">
    <property name="text">
@@ -223,6 +229,11 @@
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>
@@ -235,7 +246,6 @@
   <tabstop>leWidth</tabstop>
   <tabstop>leHeight</tabstop>
   <tabstop>cbFullScreen</tabstop>
-  <tabstop>lvServers</tabstop>
   <tabstop>pbConnect</tabstop>
  </tabstops>
  <resources/>

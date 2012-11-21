@@ -1,0 +1,6 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file>resources/icon.png</file>
+  <file>resources/rdc.ui</file>
+</qresource>
+</RCC>

@@ -4,6 +4,7 @@ import pyRDCItem
 import subprocess
 from PySide import QtCore, QtGui
 from PySide.QtUiTools import QUiLoader
+import pyRDC_resources
 
 
 class pyRDC(QtGui.QWidget):
@@ -11,12 +12,12 @@ class pyRDC(QtGui.QWidget):
         super(pyRDC, self).__init__()
         self.servers = {}
         layout_loader = QUiLoader()
-        layout_file = QtCore.QFile("resources/rdc.ui")
+        layout_file = QtCore.QFile(":resources/rdc.ui")
         layout_file.open(QtCore.QFile.ReadOnly)
         self.ui = layout_loader.load(layout_file)
         self.index = None
 
-        self.icon = QtGui.QIcon("resources/icon.png")
+        self.icon = QtGui.QIcon(":resources/icon.png")
 
         self.ui.show()
 
